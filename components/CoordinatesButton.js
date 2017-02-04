@@ -6,14 +6,10 @@ class CoordinatesButton extends React.Component {
     super()
   }
 
-  onReceiveCoordinates() {
-
-  }
-
   render() {
     return (
       <div>
-        <button onCLick={(event) => {this.props.onReceiveCoordinates([event.clientX, event.clientY])} }>
+        <button onClick={(event) => {this.props.onReceiveCoordinates([event.clientX, event.clientY])} }>
         </button>
       </div>
     )
